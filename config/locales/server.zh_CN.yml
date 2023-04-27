@@ -5,6 +5,7 @@ zh_CN:
     chatbot_open_ai_model: "The model to be accessed. More on supported models at <a target='_blank' rel='noopener' href='https://platform.openai.com/docs/models/overview'>OpenAI: Model overview</a>"
     chatbot_open_ai_uri_base: "request api base uri"
     chatbot_open_ai_request_timeout: "request timeout setting"
+    chatbot_open_ai_system: "chatgpt system prompt"
     chatbot_reply_job_time_delay: 'Number of seconds before reply job is run. This helps prevent rate limits being hit and discourages spamming.'
     chatbot_max_look_behind: "Maximum number of Posts or Chat Messages bot will consider as prompt for completion, the more the more impressive may be its response, but the more costly the interaction will be."
     chatbot_strip_quotes: "Determine if quotes are stripped and not sent within prompts (doesn't affect OP)"
@@ -28,12 +29,11 @@ zh_CN:
     chatbot_enable_verbose_console_response_progress_logging: "Enable response retrieval progress logging to console to help debug issues"
 
   chatbot:
-    bio: "你好，我不是真正的人。我是一個可以和你討論事情的機器人。別把我的话太當真。"
+    bio: "你好,我不是真正的人。我是一个可以和你讨论事情的AI机器人。別把我的话太当真。"
     prompt:
-      system: "You are a helpful assistant."
-      title: "The subject of this conversation is %{topic_title}"
-      first_post: "The first thing someone said was %{username} who said %{raw}"
-      post: "%{username} said %{raw}"
+      title: "这个对话的主题是 %{topic_title}"
+      first_post: "%{username} 在第一篇文章说了 %{raw}"
+      post: "%{username} 说了 %{raw}"
     errors:
       general: "不好意思,我现在出了点事,稍后再聊. 与此同时, 请通知管理员我挂了, 感谢!"
       retries: "不好意思,我重试了几遍最终还是挂了. 如果情况一直存在, 帮我通知一下管理员, 感谢!"

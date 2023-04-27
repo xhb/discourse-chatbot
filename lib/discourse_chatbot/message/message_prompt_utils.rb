@@ -10,7 +10,7 @@ module ::DiscourseChatbot
 
       if SiteSetting.chatbot_open_ai_model == "gpt-3.5-turbo"
 
-        messages = [{ "role": "system", "content": I18n.t("chatbot.prompt.system") }]
+        messages = [{ "role": "system", "content": SiteSetting.chatbot_open_ai_system}]
 
         messages += message_collection.reverse.map do |cm|
           username = ::User.find(cm.user_id).username
