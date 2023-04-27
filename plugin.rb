@@ -6,8 +6,7 @@
 # url: https://github.com/merefield/discourse-chatbot
 
 gem "httparty", '0.21.0'
-gem "faraday-multipart"
-gem "ruby-openai", '4.0.0', { require: false }
+gem "ruby-openai", '3.7.0', { require: false }
 
 module ::DiscourseChatbot
   PLUGIN_NAME = "discourse-chatbot"

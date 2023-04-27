@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require "openai"
+require "json"
 
 module ::DiscourseChatbot
 
@@ -34,7 +35,8 @@ module ::DiscourseChatbot
             I18n.t('chatbot.errors.general')
           end
         else
-          response.dig("choices", 0, "message", "content")
+          hash_res = JSON.parse(response.body)
+          hash_res.dig("choices", 0, "message", "content")
         end
       else
         response = @client.completions(
@@ -56,7 +58,8 @@ module ::DiscourseChatbot
             I18n.t('chatbot.errors.general')
           end
         else
-          response["choices"][0]["text"]
+          hash_res = JSON.parse(response.body)
+          hash_res.dig("choices", 0, "text")
         end
       end
     end
