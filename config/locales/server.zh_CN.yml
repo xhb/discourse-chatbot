@@ -1,4 +1,4 @@
-en:
+zh_CN:
   site_settings:
     chatbot_enabled: "Enable the chatbot plugin"
     chatbot_open_ai_token: "Your Open AI token. You can get one at <a target='_blank' rel='noopener' href='https://platform.openai.com/account/api-keys/'>openai.com</a>"
@@ -28,16 +28,16 @@ en:
     chatbot_enable_verbose_console_response_progress_logging: "Enable response retrieval progress logging to console to help debug issues"
 
   chatbot:
-    bio: "Hi, I’m not a real person. I’m a bot that can discuss things with you. Don't take me too seriously. Sometimes, I'm even right about stuff!"
+    bio: "你好，我不是真正的人。我是一個可以和你討論事情的機器人。別把我的话太當真。"
     prompt:
       system: "You are a helpful assistant."
       title: "The subject of this conversation is %{topic_title}"
       first_post: "The first thing someone said was %{username} who said %{raw}"
       post: "%{username} said %{raw}"
     errors:
-      general: "Sorry, I'm not well right now. Lets talk some other time. Meanwhile, please ask the admin to check the logs, thank you!"
-      retries: "I've tried working out a response for you several times, but ultimately failed.  Please contact the admin if this persists, thank you!"
-      forbiddeninprivatemessages: "Use in private messages has not been permitted, please contact the admin"
-      forbiddenoutsidethesecategories: "Public use of Chatbot has only been permitted in these Categories: "
-      forbiddenanycategory: "Public use of Chatbot has not been enabled in any Category, please contact your admin"
-      overquota: "I'm afraid you've reached this week's quota for bot interactions"
+      general: "不好意思,我现在出了点事,稍后再聊. 与此同时, 请通知管理员我挂了, 感谢!"
+      retries: "不好意思,我重试了几遍最终还是挂了. 如果情况一直存在, 帮我通知一下管理员, 感谢!"
+      forbiddeninprivatemessages: "管理员禁止了在私信中使用AI,请联系管理员"
+      forbiddenoutsidethesecategories: "允许使用AI的分类: "
+      forbiddenanycategory: "管理禁止了在任何分类下使用AI,请联系管理员"
+      overquota: "不好意思,你本周与AI的互动次数已经超过限额!"

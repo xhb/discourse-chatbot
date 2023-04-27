@@ -66,6 +66,12 @@ plugins:
   chatbot_open_ai_token:
     client: false
     default: ''
+  chatbot_open_ai_uri_base:
+    client: false
+    default: ''
+  chatbot_open_ai_request_timeout:
+    client: false
+    default: ''
   chatbot_request_temperature:
     client: false
     default: 100
